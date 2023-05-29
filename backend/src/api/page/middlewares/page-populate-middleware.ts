@@ -7,13 +7,16 @@
 const populate = {
   contentSections: {
     populate: {
-      picture: {
+      image: {
         fields: ["url", "alternativeText", "caption", "width", "height"],
       },
-      buttons: {
+      images: {
+        fields: ["url", "alternativeText", "caption", "width", "height"],
+      },
+      button: {
         populate: true,
       },
-      submitButton: {
+      buttons: {
         populate: true,
       },
     },

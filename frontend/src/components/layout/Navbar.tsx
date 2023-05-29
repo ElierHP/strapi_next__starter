@@ -18,7 +18,7 @@ function NavLink({ url, text }: NavLink) {
       <Link
         href={url}
         className={`flex items-center mx-4 -mb-1 border-b-2 dark:border-transparent ${
-          path === url && "dark:text-violet-400 dark:border-violet-400"
+          path === url && "dark:text-emerald-400 dark:border-emerald-400"
         }}`}
       >
         {text}
@@ -37,8 +37,8 @@ export default function Navbar({
   logoText: string | null
 }) {
   return (
-    <div className="p-4 dark:bg-black dark:text-gray-100">
-      <div className="container flex justify-between h-16 mx-auto px-0 sm:px-6">
+    <div className="dark:bg-black dark:text-gray-100">
+      <div className="container flex justify-between h-16 mx-auto px-0 sm:px-4">
         <Logo src={logoUrl}>
           {logoText && <h2 className="text-2xl font-bold">{logoText}</h2>}
         </Logo>
@@ -51,7 +51,7 @@ export default function Navbar({
           </ul>
         </div>
 
-        <button className="p-4 lg:hidden">
+        <button className="p-2 lg:hidden" aria-label="menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

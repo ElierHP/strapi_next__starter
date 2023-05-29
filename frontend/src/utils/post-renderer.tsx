@@ -1,5 +1,5 @@
 import RichText from "@/components/shared/RichText"
-import ImageSlider from "@/components/shared/ImageSlider"
+import ImageSlider from "@/components/shared/Slideshow"
 import Quote from "@/components/shared/Quote"
 import Media from "@/components/shared/Media"
 import VideoEmbed from "@/components/shared/VideoEmbed"

@@ -9,10 +9,9 @@ export async function fetchAPI(
   try {
     // Merge default and user options
     const mergedOptions = {
-      next: { revalidate: 60 },
+      next: { revalidate: 5 },
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
       },
       ...options,
     }

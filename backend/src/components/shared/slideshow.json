@@ -1,19 +1,17 @@
 {
-  "collectionName": "components_shared_sliders",
+  "collectionName": "components_shared_slideshows",
   "info": {
-    "displayName": "Slider",
+    "displayName": "Slideshow",
     "icon": "address-book",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "files": {
+    "images": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     }
   }
 }

@@ -16,7 +16,7 @@ export interface Data {
   attributes: Attribute
 }
 
-export interface Picture {
+export interface Image {
   data: Data
 }
 
@@ -33,7 +33,7 @@ export interface ContentSection {
   __component: string
   title: string
   description: string
-  picture: Picture
+  picture: Image
   buttons: Button[]
 }
 
@@ -44,7 +44,7 @@ export interface Attribute {
   updatedAt: string
   publishedAt: string
   locale: string
-  heading?: any
+  title?: any
   description?: any
   contentSections: ContentSection[]
 }

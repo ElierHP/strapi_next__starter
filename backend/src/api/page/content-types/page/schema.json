@@ -30,15 +30,12 @@
       "components": [
         "sections.heading",
         "sections.hero",
-        "sections.large-video",
-        "sections.rich-text"
+        "shared.media",
+        "shared.rich-text",
+        "shared.slideshow",
+        "shared.quote",
+        "shared.video-embed"
       ]
-    },
-    "heading": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
     }
   }
 }

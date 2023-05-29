@@ -1,3 +1,5 @@
+import { fetchAPI } from "./fetch-api"
+
 export function getStrapiURL(path = "") {
   return `${
     process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://127.0.0.1:1337"
@@ -16,6 +18,15 @@ export function getStrapiMedia(url: string | null) {
 
   // Otherwise prepend the URL path with the Strapi URL
   return `${getStrapiURL()}${url}`
+}
+
+export async function getPageBySlug(slug: string) {
+  const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN
+  const path = `/pages`
+  const urlParamsObject = { filters: { slug } }
+  const options = { headers: { Authorization: `Bearer ${token}` } }
+  const response = await fetchAPI(path, urlParamsObject, options)
+  return response
 }
 
 export function formatDate(dateString: string) {
